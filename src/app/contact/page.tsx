@@ -38,7 +38,7 @@ const page = () => {
             <textarea
               id="message"
               className="w-full p-3 border border-gray-600 rounded-lg bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:border-green-500"
-              rows="4"
+              rows={4}
               placeholder="Enter your message"
             ></textarea>
           </div>

@@ -2,7 +2,6 @@ import PageWrapper from "../components/PageWrapper";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaHome } from "react-icons/fa";
 
 const Home = () => {
   return (
