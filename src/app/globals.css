@@ -7,6 +7,23 @@
   --foreground: #171717;
 }
 
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+
+.animate-dash {
+  animation: dash 2s linear infinite;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: green;
+  border-radius: 50%;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -23,5 +40,31 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px black;
+  }
+  .scrollbar-custom {
+    scrollbar-width: 4px;
+    scrollbar-color: #13cd67 #f5f5f5;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #13cd67;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #13cd67;
+    border-radius: 10px;
+    border: 2px solid transparent;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background-color: #13cd67;
   }
 }
