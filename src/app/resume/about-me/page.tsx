@@ -2,7 +2,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className=" w-full flex flex-col gap-4 bg-slate-800 rounded-[8px] p-4">
+    <div className=" w-full flex flex-col gap-4  rounded-[8px] p-4">
       <p className=" text-[36px] text-slate-200 font-bold border-b-[1px] border-dashed border-slate-500">
         About Me
       </p>
